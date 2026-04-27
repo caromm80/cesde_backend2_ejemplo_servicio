@@ -11,7 +11,7 @@ import java.util.List;
 
 
 
-public interface ProveedorRepositorio extends JpaRepository<Proveedor, Long>  {
+public interface ProveedorRepository extends JpaRepository<Proveedor, Long>  {
 
 List<Proveedor> findByNombreContainingIgnoreCase(String nombre);
 

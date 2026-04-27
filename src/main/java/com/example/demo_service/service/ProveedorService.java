@@ -1,7 +1,7 @@
 package com.example.demo_service.service;
 
 import com.example.demo_service.model.entity.Proveedor;
-import com.example.demo_service.repository.ProveedorRepositorio;
+import com.example.demo_service.repository.ProveedorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public class ProveedorService {
 
     @Autowired
-    private ProveedorRepositorio proveedorRepositorio;
+    private ProveedorRepository proveedorRepositorio;
 
     // Listar todos los proveedores
     public List<Proveedor> listar() {
